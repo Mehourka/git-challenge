@@ -18,7 +18,7 @@ def divide(x, y):
     return x / y
 
 def power(x):
-    return x ** 2
+    return x ** x
 
 
 print("Select operation.")
@@ -26,6 +26,7 @@ print("1.Add")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Power")
 
 while True:
     # take input from the user
@@ -47,12 +48,12 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
-        
+
         # check if user wants another calculation
         # break the while loop if answer is no
         next_calculation = input("Let's do next calculation? (yes/no): ")
         if next_calculation == "no":
           break
-    
+
     else:
         print("Invalid Input")
